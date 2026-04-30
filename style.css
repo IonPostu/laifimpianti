@@ -269,7 +269,7 @@ button:hover {
     }
 
     .servizio {
-        /* SEZIONE SERVIZI COMPLETI (CHI SIAMO) */
+/* SEZIONE SERVIZI COMPLETI (CHI SIAMO) */
 
 .servizi2-container {
     display: grid;
@@ -302,8 +302,3 @@ button:hover {
     color: #444;
     line-height: 1.4;
 }
-
-        max-width: 90%;
-    }
-}
-
