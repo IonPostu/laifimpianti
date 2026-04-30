@@ -24,13 +24,13 @@
     <section class="fade-in">
         <div class="hero">
 
-            <!-- IMMAGINE -->
+            <!-- IMMAGINE HERO -->
             <img src="assets/hero-home.jpg" alt="Tecnico al lavoro" class="hero-img">
 
-            <!-- TESTO -->
+            <!-- TESTO HERO -->
             <div class="hero-text">
                 <h1>LAIF IMPIANTI SRLS</h1>
-                <h3 style="color:#ff7a00; margin-bottom:15px;">Esperienza – Affidabilità – Qualità</h3>
+                <h3 style="color:#ff7a00; margin-bottom:15px;">Esperienza - Affidabilità - Qualità</h3>
 
                 <p>
                     Specialisti in impianti elettrici industriali e civili, cablaggio e quadri elettrici.
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <!-- CONTATTI -->
+    <!-- CONTATTACI -->
     <section class="fade-in" style="background:#f8f8f8; padding:40px 20px;">
         <h2>Contattaci</h2>
 
@@ -86,3 +86,34 @@
             Sede: Verona, Italia
         </p>
 
+        <form class="form-contatti" action="https://formsubmit.co/commerciale.laifimpiantisrls@yahoo.com" method="POST">
+            <input type="text" name="Nome" placeholder="Nome" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="Oggetto" placeholder="Oggetto" required>
+            <textarea name="Messaggio" placeholder="Messaggio" required></textarea>
+
+            <!-- Redirect dopo invio -->
+            <input type="hidden" name="_next" value="https://ionpostu.github.io/laifimpianti/index.html">
+
+            <button type="submit">Invia Messaggio</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in">
+        <div class="footer-col">
+            <h3>LAIF IMPIANTI SRLS</h3>
+            <p>Soluzioni elettriche professionali per privati e aziende.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contatti</h3>
+            <p>Via del Fante, 15 – Verona (VR)</p>
+            <p>C.F. 04990520233 – P.IVA 04990520233</p>
+            <p>REA VR - 461819</p>
+            <p>CODICE UNIVOCO: M5UXCR1</p>
+        </div>
+    </footer>
+
+</body>
+</html>
