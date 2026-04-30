@@ -19,125 +19,123 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="fade-in" style="max-width:1100px; margin:auto; padding:40px 20px;">
-        <div class="hero" style="align-items:center; gap:40px;">
-
-            <!-- IMMAGINE HERO (sinistra) -->
-            <img src="assets/hero-home.jpg" alt="Tecnico al lavoro" class="hero-img">
-
-            <!-- TESTO HERO (destra) -->
-            <div class="hero-text" style="text-align:left;">
-                <h1>LAIF IMPIANTI SRLS</h1>
-                <h3 style="color:#ff7a00; margin:10px 0 18px;">Esperienza - Affidabilità - Qualità</h3>
-
-                <p style="margin-bottom:18px;">
-                    Specialisti in impianti elettrici industriali e civili, cablaggio e quadri elettrici.
-                    Operativi a Verona e disponibili per trasferte in Italia e all’estero.
-                </p>
-
-                <a href="contatti.html" class="btn">Contattaci</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- I NOSTRI SERVIZI -->
-    <section class="fade-in" style="padding-bottom:10px;">
-        <h2>I Nostri Servizi</h2>
-        <p style="max-width:700px; margin:12px auto 20px;">
-            Soluzioni elettriche professionali con i più alti standard di sicurezza e affidabilità per la tua casa o azienda.
-        </p>
-
-        <div class="servizi-container" style="max-width:1100px; margin:auto;">
-
-            <div class="servizio">
-                <img src="assets/servizio1.jpg" alt="Impianti civili e industriali">
-                <h3>Impianti civili e industriali</h3>
-                <p>Progettiamo, ampliamo e mettiamo a norma impianti elettrici per case e aziende, garantendo sicurezza e conformità alle leggi.</p>
-                <a href="servizi.html" class="btn" style="margin-top:12px;">Scopri di più</a>
-            </div>
-
-            <div class="servizio">
-                <img src="assets/servizio2.jpg" alt="Impianti di automazione">
-                <h3>Impianti di automazione</h3>
-                <p>Gestiamo ogni fase: progettazione, cablaggio e manutenzione per garantire sistemi di automazione sicuri e produttivi.</p>
-                <a href="servizi.html" class="btn" style="margin-top:12px;">Scopri di più</a>
-            </div>
-
-            <div class="servizio">
-                <img src="assets/servizio3.jpg" alt="Quadri elettrici">
-                <h3>Quadri elettrici</h3>
-                <p>Assemblaggio, cablaggio, modifica e manutenzione di quadri elettrici per impianti civili e industriali, con particolare attenzione alla sicurezza e continuità di servizio.</p>
-                <a href="servizi.html" class="btn" style="margin-top:12px;">Scopri di più</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTATTACI (completa come nello screenshot) -->
-    <section class="fade-in" style="background:#f8f8f8; padding:40px 20px;">
-        <div style="max-width:1100px; margin:auto; display:flex; gap:40px; flex-wrap:wrap; align-items:flex-start;">
-
-            <!-- INFO CONTATTO -->
-            <div style="flex:1; min-width:280px;">
-                <h2>Contattaci</h2>
-                <p style="margin-top:10px; line-height:1.6;">
-                    Email: <strong>commerciale.laifimpiantisrls@yahoo.com</strong><br>
-                    Sede: Verona, Italia
-                </p>
-
-                <div style="margin-top:18px; line-height:1.6;">
-                    <strong>LAIF IMPIANTI SRLS</strong><br>
-                    Via del Fante, 15<br>
-                    37122 Verona (VR)<br>
-                    C.F. 04990520233<br>
-                    P.IVA 04990520233<br>
-                    REA VR - 461819<br>
-                    CODICE UNIVOCO: M5UXCR1
-                </div>
-
-                <div style="margin-top:14px; line-height:1.6;">
-                    <strong>Amministrazione</strong><br>
-                    TEL: +39 3295813851<br>
-                    Mail: commerciale.laifimpiantisrls@yahoo.com
-                </div>
-
-                <div style="margin-top:12px; line-height:1.6;">
-                    <strong>Segreteria</strong><br>
-                    TEL: +39 3293796313<br>
-                    Mail: amministrazione.laifimpianti@gmail.com
+    <!-- HERO (immagine a sinistra, testo a destra) -->
+    <main style="max-width:1100px; margin:40px auto; padding:0 20px;">
+        <section class="fade-in">
+            <div class="hero" style="display:flex; gap:40px; align-items:center; flex-wrap:wrap;">
+                <img src="assets/hero-home.jpg" alt="Tecnico al lavoro" class="hero-img" style="width:460px; max-width:100%; border-radius:10px;">
+                <div class="hero-text" style="flex:1; min-width:280px; text-align:left;">
+                    <h1 style="margin-bottom:8px;">LAIF IMPIANTI SRLS</h1>
+                    <h3 style="color:#ff7a00; margin:0 0 16px 0;">Esperienza - Affidabilità - Qualità</h3>
+                    <p style="margin-bottom:18px;">
+                        Specialisti in impianti elettrici industriali e civili, cablaggio e quadri elettrici.
+                        Operativi a Verona e disponibili per trasferte in Italia e all’estero.
+                    </p>
+                    <a href="contatti.html" class="btn">Contattaci</a>
                 </div>
             </div>
+        </section>
 
-            <!-- FORM CONTATTI -->
-            <div style="flex:1; min-width:320px;">
-                <form class="form-contatti" action="https://formsubmit.co/commerciale.laifimpiantisrls@yahoo.com" method="POST" style="background:#fff; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06);">
-                    <input type="text" name="Nome" placeholder="Nome" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <input type="text" name="Oggetto" placeholder="Oggetto" required>
-                    <textarea name="Messaggio" placeholder="Messaggio" required></textarea>
+        <!-- I NOSTRI SERVIZI -->
+        <section class="fade-in" style="margin-top:48px;">
+            <h2>I Nostri Servizi</h2>
+            <p style="max-width:760px; margin:12px auto 24px;">
+                Soluzioni elettriche professionali con il più alto standard di sicurezza e affidabilità per la tua casa o azienda.
+            </p>
 
-                    <input type="hidden" name="_next" value="https://ionpostu.github.io/laifimpianti/index.html">
-                    <button type="submit">Invia Messaggio</button>
-                </form>
+            <div class="servizi-container" style="max-width:1100px; margin:auto; gap:24px; display:flex; flex-wrap:wrap; justify-content:center;">
+                <article class="servizio" style="min-width:260px; max-width:340px;">
+                    <img src="assets/servizio1.jpg" alt="Impianti civili e industriali">
+                    <h3>Impianti civili e industriali</h3>
+                    <p>Progettiamo, ampliamo e mettiamo a norma gli impianti elettrici di case e aziende, garantendo sicurezza e conformità alle leggi.</p>
+                    <a href="servizi.html" class="btn" style="margin-top:12px;">Scopri di più</a>
+                </article>
+
+                <article class="servizio" style="min-width:260px; max-width:340px;">
+                    <img src="assets/servizio2.jpg" alt="Impianti di automazione">
+                    <h3>Impianti di automazione</h3>
+                    <p>Gestiamo ogni fase: progettazione, cablaggio e manutenzione per sistemi di automazione sicuri e produttivi.</p>
+                    <a href="servizi.html" class="btn" style="margin-top:12px;">Scopri di più</a>
+                </article>
+
+                <article class="servizio" style="min-width:260px; max-width:340px;">
+                    <img src="assets/servizio3.jpg" alt="Quadri elettrici">
+                    <h3>Quadri elettrici</h3>
+                    <p>Progettazione, cablaggio, collaudo e manutenzione di quadri elettrici per impianti civili e industriali, conformità e sicurezza certificata.</p>
+                    <a href="servizi.html" class="btn" style="margin-top:12px;">Scopri di più</a>
+                </article>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- CONTATTACI (info + form affiancati) -->
+        <section class="fade-in" style="background:#f8f8f8; margin-top:48px; padding:36px 20px; border-radius:8px;">
+            <div style="max-width:1100px; margin:auto; display:flex; gap:32px; flex-wrap:wrap; align-items:flex-start;">
+                <!-- Info contatti -->
+                <div style="flex:1; min-width:280px;">
+                    <h2>Contattaci</h2>
+                    <p style="margin-top:8px; line-height:1.6;">
+                        Email: <strong>commerciale.laifimpiantisrls@yahoo.com</strong><br>
+                        Sede: Verona, Italia
+                    </p>
+
+                    <div style="margin-top:18px; line-height:1.6;">
+                        <strong>LAIF IMPIANTI SRLS</strong><br>
+                        Via del Fante, 15<br>
+                        37122 Verona (VR)<br>
+                        C.F. 04990520233<br>
+                        P.IVA 04990520233<br>
+                        REA VR - 461819<br>
+                        CODICE UNIVOCO: M5UXCR1
+                    </div>
+
+                    <div style="margin-top:14px; line-height:1.6;">
+                        <strong>Amministrazione</strong><br>
+                        TEL: +39 3295813851<br>
+                        Mail: commerciale.laifimpiantisrls@yahoo.com
+                    </div>
+
+                    <div style="margin-top:12px; line-height:1.6;">
+                        <strong>Segreteria</strong><br>
+                        TEL: +39 3293796313<br>
+                        Mail: amministrazione.laifimpianti@gmail.com
+                    </div>
+                </div>
+
+                <!-- Form contatti -->
+                <div style="flex:1; min-width:320px;">
+                    <form class="form-contatti" action="https://formsubmit.co/commerciale.laifimpiantisrls@yahoo.com" method="POST" style="background:#fff; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                        <input type="text" name="Nome" placeholder="Nome" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <input type="text" name="Oggetto" placeholder="Oggetto" required>
+                        <textarea name="Messaggio" placeholder="Messaggio" required></textarea>
+
+                        <input type="hidden" name="_next" value="https://ionpostu.github.io/laifimpianti/index.html">
+                        <button type="submit">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
-    <footer class="footer fade-in" style="padding-top:30px;">
-        <div class="footer-col">
-            <h3>LAIF IMPIANTI SRLS</h3>
-            <p>Soluzioni elettriche professionali per privati e aziende.</p>
-        </div>
+    <footer class="footer fade-in" style="margin-top:36px;">
+        <div style="max-width:1100px; margin:0 auto; display:flex; gap:40px; flex-wrap:wrap; justify-content:space-between; padding:20px;">
+            <div class="footer-col">
+                <h3>LAIF IMPIANTI SRLS</h3>
+                <p>Soluzioni elettriche professionali per privati e aziende.</p>
+            </div>
 
-        <div class="footer-col">
-            <h3>Contatti</h3>
-            <p>Via del Fante, 15<br>37122 Verona (VR)</p>
-            <p>C.F. 04990520233 – P.IVA 04990520233</p>
-            <p>REA VR - 461819</p>
-            <p>CODICE UNIVOCO: M5UXCR1</p>
+            <div class="footer-col">
+                <h3>Contatti</h3>
+                <p>Via del Fante, 15<br>37122 Verona (VR)</p>
+                <p>C.F. 04990520233 – P.IVA 04990520233</p>
+                <p>REA VR - 461819</p>
+                <p>CODICE UNIVOCO: M5UXCR1</p>
+            </div>
+        </div>
+        <div style="text-align:center; padding:12px 0; color:#cbd5e1; font-size:14px;">
+            © 2026 LAIF IMPIANTI. Tutti i diritti sono riservati.
         </div>
     </footer>
 
