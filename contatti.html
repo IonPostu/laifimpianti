@@ -19,12 +19,13 @@
             padding: 20px 40px; border-bottom: 1px solid #eee;
         }
         .logo { width: 120px; height: auto; }
-        nav ul { display: flex; gap: 40px; }
+        nav ul { display: flex; gap: 50px; }
         nav a {
-            text-transform: uppercase; font-size: 0.9rem;
-            color: #555; font-weight: 600;
+            text-transform: uppercase; font-size: 0.85rem;
+            color: #1a1a2e; font-weight: 700;
+            letter-spacing: 0.5px;
         }
-        nav a.active { color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 5px; }
+        nav a.active { border-bottom: 2px solid #1a1a2e; padding-bottom: 5px; }
 
         /* --- CONTATTI PAGE --- */
         .page-contatti {
@@ -145,27 +146,80 @@
             background: #e07500;
         }
 
-        /* --- FOOTER --- */
-        footer { 
-            border-top: 1px solid #eee; 
-            padding: 40px 0 20px; 
-            font-size: 0.9rem; 
-            margin-top: 20px; 
-        }
-        .footer-grid {
-            display: grid; 
-            grid-template-columns: 1fr 2fr; 
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-        .footer-col p { font-size: 0.85rem; line-height: 1.6; color: #555; }
-        .footer-col strong { font-weight: 700; }
-        .copyright {
-            text-align: center; 
-            color: #888;
-            font-size: 0.75rem; 
+        /* --- FOOTER CORRETTO --- */
+        footer {
             border-top: 1px solid #eee;
-            padding-top: 20px;
+            padding: 50px 0 30px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .footer-col-sede {
+            flex: 1;
+            min-width: 250px;
+        }
+        .footer-col-sede img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .footer-col-sede h4 {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .footer-col-sede p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .footer-col-admin {
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer-col-admin h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .footer-col-admin p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .footer-col-seg {
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer-col-seg h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .footer-col-seg p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #888;
+            font-size: 0.75rem;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+            margin-top: 30px;
         }
 
         /* --- RESPONSIVE --- */
@@ -175,7 +229,11 @@
             
             .page-contatti h1 { font-size: 2.2rem; }
             .form-wrapper { padding: 25px; }
-            .footer-grid { grid-template-columns: 1fr; }
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -201,7 +259,6 @@
             <div class="form-wrapper">
                 <h3>Richiedi un preventivo per un servizio elettrico</h3>
 
-                <!-- Sostituisci IL-TUO-ID con il codice che ricevi da Formspree -->
                 <form action="https://formspree.io/f/IL-TUO-ID" method="POST">
 
                     <div class="form-row">
@@ -263,27 +320,32 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <img src="logo-laif.png" alt="Logo" style="width:100px; margin-bottom:10px;">
+            <div class="footer-content">
+                <div class="footer-col-sede">
+                    <img src="logo-laif.png" alt="Logo">
                     <h4>LAIF IMPIANTI SRLS</h4>
                     <p>
                         Via del Fante, 15<br>
                         37122 Verona (VR)<br>
-                        C.F. 048950202323
+                        C.F. 048950202323<br>
+                        P.Iva 049950202323<br>
+                        REA VR - 461819<br>
+                        CODICE UNIVOCO: M5UXCR1
                     </p>
                 </div>
-                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;">
-                    <div>
-                        <strong>Amministrazione:</strong><br>
+                <div class="footer-col-admin">
+                    <h4>Amministrazione:</h4>
+                    <p>
                         TEL. +39 3295813851<br>
-                        commerciale.laifimpiantisrls@yahoo.com
-                    </div>
-                    <div>
-                        <strong>Segreteria:</strong><br>
+                        Mail: commerciale.laifimpiantisrls@yahoo.com
+                    </p>
+                </div>
+                <div class="footer-col-seg">
+                    <h4>Segreteria:</h4>
+                    <p>
                         Tel. +39 3293796313<br>
-                        amministrazione.laifimpianti@gmail.com
-                    </div>
+                        Mail: amministrazione.laifimpianti@gmail.com
+                    </p>
                 </div>
             </div>
             <div class="copyright">© 2026 LAIF IMPIANTI. Tutti i diritti sono riservati.</div>
