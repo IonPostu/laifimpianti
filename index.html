@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAIF IMPIANTI SRLS - Home</title>
     <style>
-        /* --- RESET --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Open Sans', sans-serif; color: #333; background: #fff; }
         a { text-decoration: none; color: inherit; }
@@ -27,223 +26,96 @@
         }
         nav a.active { border-bottom: 2px solid #1a1a2e; padding-bottom: 5px; }
 
-        /* --- HERO SECTION --- */
+        /* --- HERO --- */
         .hero {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            margin-bottom: 60px;
+            display: flex; flex-wrap: wrap; width: 100%; margin-bottom: 60px;
         }
-
         .hero-image {
-            flex: 1;
-            min-width: 400px;
-            height: 550px;
-            /* Usa la tua foto operaio-cablaggio.jpg */
+            flex: 1; min-width: 400px; height: 550px;
             background-image: url('operaio-cablaggio.jpg');
-            background-size: cover;
-            background-position: center;
+            background-size: cover; background-position: center;
         }
-
         .hero-text {
-            flex: 1;
-            min-width: 400px;
-            padding: 80px 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex: 1; min-width: 400px; padding: 80px 60px;
+            display: flex; flex-direction: column; justify-content: center;
             background: white;
         }
-
         .hero-text h1 {
-            font-family: 'Georgia', serif;
-            font-size: 3rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #1a1a2e;
-            margin-bottom: 15px;
+            font-family: 'Georgia', serif; font-size: 3rem; font-weight: 900;
+            text-transform: uppercase; letter-spacing: 1px;
+            color: #1a1a2e; margin-bottom: 15px;
         }
-
         .hero-text .sub {
-            border-top: 3px solid #fb8500;
-            padding-top: 15px;
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 25px;
-            font-weight: 400;
+            border-top: 3px solid #fb8500; padding-top: 15px;
+            font-size: 1.1rem; color: #555; margin-bottom: 25px;
         }
-
-        .hero-text p {
-            color: #666;
-            line-height: 1.8;
-            font-size: 1rem;
-        }
+        .hero-text p { color: #666; line-height: 1.8; font-size: 1rem; }
 
         /* --- SERVIZI (riassunto) --- */
-        .servizi-home {
-            padding: 20px 0 60px;
-        }
+        .servizi-home { padding: 20px 0 60px; }
         .servizi-home h2 {
-            font-family: 'Georgia', serif;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 10px;
         }
-        .servizi-home .sottotitolo {
-            color: #666;
-            margin-bottom: 40px;
-        }
+        .servizi-home .sottotitolo { color: #666; margin-bottom: 40px; }
 
         .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;
         }
         .card {
-            background: #f5f6f8;
-            border-radius: 15px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
+            background: #f5f6f8; border-radius: 15px; overflow: hidden;
+            display: flex; flex-direction: column;
         }
         .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
+            width: 100%; height: 200px; object-fit: cover;
+            border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;
         }
-        .card-body {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .card-body h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #1a1a2e;
-        }
-        .card-body p {
-            font-size: 0.9rem;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
+        .card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card-body h3 { font-size: 1.2rem; margin-bottom: 10px; color: #1a1a2e; }
+        .card-body p { font-size: 0.9rem; color: #555; margin-bottom: 20px; line-height: 1.6; }
         .btn-piu {
-            display: inline-block;
-            border: 2px solid #fb8500;
-            color: #fb8500;
-            padding: 8px 25px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-align: center;
-            margin-top: auto;
-            align-self: flex-start;
+            display: inline-block; border: 2px solid #fb8500; color: #fb8500;
+            padding: 8px 25px; border-radius: 50px; font-size: 0.8rem; font-weight: 600;
+            margin-top: auto; align-self: flex-start;
         }
 
         /* --- FOOTER CORRETTO --- */
         footer {
-            border-top: 1px solid #eee;
-            padding: 50px 0 30px;
-            font-size: 0.9rem;
-            margin-top: 60px;
+            border-top: 1px solid #eee; padding: 40px 0 20px; font-size: 0.9rem; margin-top: 40px;
+            background: white;
         }
-
+        .footer-title h3 {
+            font-family: 'Georgia', serif; font-size: 1.5rem; font-weight: 700;
+            color: #1a1a2e; margin-bottom: 25px; text-align: left;
+        }
         .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 40px;
+            display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 60px; margin-bottom: 20px;
         }
+        .footer-col-sede { flex: 0 0 280px; }
+        .footer-col-sede .footer-logo { width: 80px; height: auto; margin-bottom: 15px; }
+        .footer-col-sede h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+        .footer-col-sede p { font-size: 0.85rem; line-height: 1.6; color: #555; }
 
-        /* Colonna 1: Logo e Sede */
-        .footer-col-sede {
-            flex: 1;
-            min-width: 250px;
-        }
-        .footer-col-sede img {
-            width: 100px;
-            margin-bottom: 15px;
-        }
-        .footer-col-sede h4 {
-            margin-bottom: 8px;
-            font-size: 1rem;
-            font-weight: 700;
-        }
-        .footer-col-sede p {
-            font-size: 0.85rem;
-            line-height: 1.8;
-            color: #555;
-        }
+        .footer-col-admin { flex: 1; min-width: 200px; }
+        .footer-col-admin h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
+        .footer-col-admin p { font-size: 0.85rem; line-height: 1.6; color: #555; }
 
-        /* Colonna 2: Amministrazione */
-        .footer-col-admin {
-            flex: 1;
-            min-width: 200px;
-        }
-        .footer-col-admin h4 {
-            font-size: 1rem;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        .footer-col-admin p {
-            font-size: 0.85rem;
-            line-height: 1.6;
-            color: #555;
-        }
+        .footer-col-seg { flex: 1; min-width: 200px; }
+        .footer-col-seg h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
+        .footer-col-seg p { font-size: 0.85rem; line-height: 1.6; color: #555; }
 
-        /* Colonna 3: Segreteria */
-        .footer-col-seg {
-            flex: 1;
-            min-width: 200px;
-        }
-        .footer-col-seg h4 {
-            font-size: 1rem;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        .footer-col-seg p {
-            font-size: 0.85rem;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .copyright {
-            text-align: center;
-            color: #888;
-            font-size: 0.75rem;
-            border-top: 1px solid #eee;
-            padding-top: 25px;
-            margin-top: 30px;
-        }
+        .footer-extra p { font-size: 0.85rem; color: #555; margin-bottom: 20px; }
+        .copyright { text-align: center; color: #888; font-size: 0.75rem; border-top: 1px solid #eee; padding-top: 20px; }
 
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             header { flex-direction: column; gap: 15px; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
-            
             .hero { flex-direction: column; }
-            .hero-image {
-                width: 100%;
-                height: 300px;
-                min-width: unset;
-            }
-            .hero-text {
-                min-width: unset;
-                padding: 40px 20px;
-            }
+            .hero-image { width: 100%; height: 300px; min-width: unset; }
+            .hero-text { min-width: unset; padding: 40px 20px; }
             .hero-text h1 { font-size: 2rem; }
-            
-            .footer-content {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+            .footer-content { flex-direction: column; gap: 30px; }
+            .footer-col-sede { flex: unset; width: 100%; }
         }
     </style>
 </head>
@@ -272,7 +144,7 @@
             </div>
         </section>
 
-        <!-- SERVIZI (riassunto Home) -->
+        <!-- SERVIZI -->
         <section class="servizi-home container">
             <h2>I Nostri Servizi</h2>
             <p class="sottotitolo">Soluzioni elettriche professionali con i più alti standard di sicurezza e affidabilità per la tua casa o azienda.</p>
@@ -308,11 +180,13 @@
 
     <footer>
         <div class="container">
+            <div class="footer-title">
+                <h3>CONTATTI</h3>
+            </div>
+
             <div class="footer-content">
-                
-                <!-- Colonna 1: Logo e Sede -->
                 <div class="footer-col-sede">
-                    <img src="logo-laif.png" alt="Logo">
+                    <img src="logo-laif.png" alt="Logo LAIF IMPIANTI" class="footer-logo">
                     <h4>LAIF IMPIANTI SRLS</h4>
                     <p>
                         Via del Fante, 15<br>
@@ -324,7 +198,6 @@
                     </p>
                 </div>
 
-                <!-- Colonna 2: Amministrazione -->
                 <div class="footer-col-admin">
                     <h4>Amministrazione:</h4>
                     <p>
@@ -333,15 +206,17 @@
                     </p>
                 </div>
 
-                <!-- Colonna 3: Segreteria -->
                 <div class="footer-col-seg">
-                    <h4>Segreteria:</h4>
+                    <h4>Segreteria :</h4>
                     <p>
                         Tel. +39 3293796313<br>
                         Mail: amministrazione.laifimpianti@gmail.com
                     </p>
                 </div>
+            </div>
 
+            <div class="footer-extra">
+                <p>Italia</p>
             </div>
 
             <div class="copyright">© 2026 LAIF IMPIANTI. Tutti i diritti sono riservati.</div>
