@@ -12,7 +12,6 @@
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* --- HEADER --- */
         header {
             display: flex; justify-content: space-between; align-items: center;
             padding: 20px 40px; border-bottom: 1px solid #eee;
@@ -26,7 +25,6 @@
         }
         nav a.active { border-bottom: 2px solid #1a1a2e; padding-bottom: 5px; }
 
-        /* --- HERO --- */
         .hero {
             display: flex; flex-wrap: wrap; width: 100%; margin-bottom: 60px;
         }
@@ -51,7 +49,6 @@
         }
         .hero-text p { color: #666; line-height: 1.8; font-size: 1rem; }
 
-        /* --- SERVIZI (riassunto) --- */
         .servizi-home { padding: 20px 0 60px; }
         .servizi-home h2 {
             font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 10px;
@@ -78,35 +75,95 @@
             margin-top: auto; align-self: flex-start;
         }
 
-        /* --- FOOTER CORRETTO --- */
+        /* --- FOOTER CORRETTO (allineato) --- */
         footer {
-            border-top: 1px solid #eee; padding: 40px 0 20px; font-size: 0.9rem; margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding: 40px 0 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
             background: white;
         }
+
+        .footer-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
         .footer-title h3 {
-            font-family: 'Georgia', serif; font-size: 1.5rem; font-weight: 700;
-            color: #1a1a2e; margin-bottom: 25px; text-align: left;
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            text-transform: uppercase;
         }
+
         .footer-content {
-            display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 60px; margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 20px;
         }
-        .footer-col-sede { flex: 0 0 280px; }
-        .footer-col-sede .footer-logo { width: 80px; height: auto; margin-bottom: 15px; }
-        .footer-col-sede h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
-        .footer-col-sede p { font-size: 0.85rem; line-height: 1.6; color: #555; }
 
-        .footer-col-admin { flex: 1; min-width: 200px; }
-        .footer-col-admin h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-        .footer-col-admin p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col-sede {
+            flex: 0 0 300px;
+            text-align: left;
+        }
+        .footer-col-sede .footer-logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .footer-col-sede h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            padding-top: 2px;
+        }
+        .footer-col-sede p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #555;
+            margin-top: 5px;
+        }
 
-        .footer-col-seg { flex: 1; min-width: 200px; }
-        .footer-col-seg h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-        .footer-col-seg p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col-dx {
+            flex: 0 0 400px;
+            text-align: left;
+        }
+        .footer-col-dx .block {
+            margin-bottom: 25px;
+        }
+        .footer-col-dx .block h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            padding-top: 2px;
+        }
+        .footer-col-dx .block p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #555;
+        }
 
-        .footer-extra p { font-size: 0.85rem; color: #555; margin-bottom: 20px; }
-        .copyright { text-align: center; color: #888; font-size: 0.75rem; border-top: 1px solid #eee; padding-top: 20px; }
+        .footer-italia {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
 
-        /* --- RESPONSIVE --- */
+        .copyright {
+            text-align: center;
+            color: #888;
+            font-size: 0.75rem;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
         @media (max-width: 768px) {
             header { flex-direction: column; gap: 15px; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
@@ -114,8 +171,10 @@
             .hero-image { width: 100%; height: 300px; min-width: unset; }
             .hero-text { min-width: unset; padding: 40px 20px; }
             .hero-text h1 { font-size: 2rem; }
-            .footer-content { flex-direction: column; gap: 30px; }
-            .footer-col-sede { flex: unset; width: 100%; }
+            .footer-content { flex-direction: column; align-items: center; gap: 40px; }
+            .footer-col-sede { flex: unset; width: 100%; text-align: center; }
+            .footer-col-sede .footer-logo { margin: 0 auto 15px; }
+            .footer-col-dx { flex: unset; width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -134,7 +193,6 @@
     </header>
 
     <main>
-        <!-- HERO -->
         <section class="hero">
             <div class="hero-image"></div>
             <div class="hero-text">
@@ -144,7 +202,6 @@
             </div>
         </section>
 
-        <!-- SERVIZI -->
         <section class="servizi-home container">
             <h2>I Nostri Servizi</h2>
             <p class="sottotitolo">Soluzioni elettriche professionali con i più alti standard di sicurezza e affidabilità per la tua casa o azienda.</p>
@@ -191,31 +248,32 @@
                     <p>
                         Via del Fante, 15<br>
                         37122 Verona (VR)<br>
-                        C.F. 048950202323<br>
-                        P.Iva 049950202323<br>
+                        C.F. 04995020233<br>
+                        P.Iva 04995020233<br>
                         REA VR - 461819<br>
                         CODICE UNIVOCO: M5UXCR1
                     </p>
                 </div>
 
-                <div class="footer-col-admin">
-                    <h4>Amministrazione:</h4>
-                    <p>
-                        TEL. +39 3295813851<br>
-                        Mail: commerciale.laifimpiantisrls@yahoo.com
-                    </p>
-                </div>
-
-                <div class="footer-col-seg">
-                    <h4>Segreteria :</h4>
-                    <p>
-                        Tel. +39 3293796313<br>
-                        Mail: amministrazione.laifimpianti@gmail.com
-                    </p>
+                <div class="footer-col-dx">
+                    <div class="block">
+                        <h4>Amministrazione:</h4>
+                        <p>
+                            TEL. +39 3295813851<br>
+                            Mail: commerciale.laifimpiantisrls@yahoo.com
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h4>Segreteria :</h4>
+                        <p>
+                            Tel. +39 3293796313<br>
+                            Mail: amministrazione.laifimpianti@gmail.com
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-extra">
+            <div class="footer-italia">
                 <p>Italia</p>
             </div>
 
