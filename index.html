@@ -75,7 +75,7 @@
             margin-top: auto; align-self: flex-start;
         }
 
-        /* --- FOOTER CORRETTO (definitivo) --- */
+        /* --- FOOTER CORRETTO (allineato) --- */
         footer {
             border-top: 1px solid #eee;
             padding: 40px 0 20px;
@@ -104,11 +104,10 @@
             margin-bottom: 20px;
         }
 
-        /* Colonna SINISTRA con margine negativo */
+        /* Colonna SINISTRA (LAIF IMPIANTI nella posizione corretta) */
         .footer-col-sede {
             flex: 0 0 300px;
             text-align: left;
-            /* Sposta tutta la colonna verso l'alto per annullare il logo */
             margin-top: -70px;
         }
         .footer-col-sede .footer-logo {
@@ -127,16 +126,17 @@
             font-size: 0.85rem;
             line-height: 1.6;
             color: #555;
-            margin-top: 0;
         }
 
-        /* Colonna DESTRA */
+        /* Colonna DESTRA (AMMINISTRAZIONE allineata) */
         .footer-col-dx {
             flex: 0 0 400px;
             text-align: left;
             display: flex;
             flex-direction: column;
             gap: 25px;
+            /* Regolazione precisa: abbassa leggermente AMMINISTRAZIONE */
+            padding-top: 13px;  /* Prova 13px, se non basta aumenta a 15px o 18px */
         }
         .footer-col-dx .block h4 {
             font-size: 1rem;
@@ -175,7 +175,7 @@
             .hero-text h1 { font-size: 2rem; }
             .footer-content { flex-direction: column; align-items: center; gap: 40px; }
             .footer-col-sede { margin-top: 0; flex: unset; width: 100%; text-align: center; }
-            .footer-col-dx { flex: unset; width: 100%; text-align: center; }
+            .footer-col-dx { padding-top: 0; flex: unset; width: 100%; text-align: center; }
         }
     </style>
 </head>
