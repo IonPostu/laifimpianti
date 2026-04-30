@@ -75,7 +75,7 @@
             margin-top: auto; align-self: flex-start;
         }
 
-        /* --- FOOTER CORRETTO (allineato) --- */
+        /* --- FOOTER CORRETTO (identico allo screenshot) --- */
         footer {
             border-top: 1px solid #eee;
             padding: 40px 0 20px;
@@ -100,7 +100,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 60px;
+            gap: 80px;
             margin-bottom: 20px;
         }
 
@@ -111,40 +111,39 @@
         .footer-col-sede .footer-logo {
             width: 80px;
             height: auto;
-            margin-bottom: 5px;
             display: block;
+            margin-bottom: 10px;
         }
         .footer-col-sede h4 {
             font-size: 1rem;
             font-weight: 700;
             margin-bottom: 5px;
             text-transform: uppercase;
-            padding-top: 2px;
         }
         .footer-col-sede p {
             font-size: 0.85rem;
-            line-height: 1.8;
+            line-height: 1.6;
             color: #555;
-            margin-top: 5px;
+            margin-top: 0;
         }
 
         .footer-col-dx {
             flex: 0 0 400px;
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
         }
-        .footer-col-dx .block {
-            margin-bottom: 25px;
-        }
+
         .footer-col-dx .block h4 {
             font-size: 1rem;
             font-weight: 700;
             margin-bottom: 5px;
             text-transform: uppercase;
-            padding-top: 2px;
         }
         .footer-col-dx .block p {
             font-size: 0.85rem;
-            line-height: 1.8;
+            line-height: 1.6;
             color: #555;
         }
 
@@ -173,7 +172,7 @@
             .hero-text h1 { font-size: 2rem; }
             .footer-content { flex-direction: column; align-items: center; gap: 40px; }
             .footer-col-sede { flex: unset; width: 100%; text-align: center; }
-            .footer-col-sede .footer-logo { margin: 0 auto 15px; }
+            .footer-col-sede .footer-logo { margin: 0 auto 10px; }
             .footer-col-dx { flex: unset; width: 100%; text-align: center; }
         }
     </style>
@@ -242,6 +241,7 @@
             </div>
 
             <div class="footer-content">
+                <!-- Colonna SINISTRA -->
                 <div class="footer-col-sede">
                     <img src="logo-laif.png" alt="Logo LAIF IMPIANTI" class="footer-logo">
                     <h4>LAIF IMPIANTI SRLS</h4>
@@ -255,6 +255,7 @@
                     </p>
                 </div>
 
+                <!-- Colonna DESTRA -->
                 <div class="footer-col-dx">
                     <div class="block">
                         <h4>Amministrazione:</h4>
@@ -264,7 +265,7 @@
                         </p>
                     </div>
                     <div class="block">
-                        <h4>Segreteria :</h4>
+                        <h4>Segreteria:</h4>
                         <p>
                             Tel. +39 3293796313<br>
                             Mail: amministrazione.laifimpianti@gmail.com
