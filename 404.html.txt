@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina non trovata – Servicios Profesiona</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0a3d62;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 404 SECTION */
+        .error-section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .error-section h1 {
+            font-size: 80px;
+            color: #0a3d62;
+            margin-bottom: 10px;
+        }
+
+        .error-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #1e90ff;
+            padding: 12px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0c6cd4;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo"><strong>Servicios Profesiona</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="servizi.html">Servizi</a>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <!-- 404 SECTION -->
+    <section class="error-section">
+        <h1>404</h1>
+        <p>Ops! La pagina che stai cercando non esiste.</p>
+        <a class="btn" href="index.html">Torna alla Home</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Servicios Profesiona – Tutti i diritti riservati
+    </footer>
+
+</body>
+</html>

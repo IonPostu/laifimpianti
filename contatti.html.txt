@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Profesiona – Contatti</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0a3d62;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            background-color: #0a3d62;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        /* CONTATTI */
+        .contact-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .contact-section h2 {
+            font-size: 32px;
+            color: #0a3d62;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-box {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        .contact-box p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact-box strong {
+            color: #0a3d62;
+        }
+
+        /* FORM */
+        form {
+            background-color: #eef2f5;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        form label {
+            font-weight: bold;
+            color: #0a3d62;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0c6cd4;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo"><strong>Servicios Profesiona</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="servizi.html">Servizi</a>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Contattaci</h1>
+        <p>Siamo sempre disponibili per informazioni, preventivi e assistenza.</p>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="contact-section">
+        <h2>Informazioni di Contatto</h2>
+
+        <div class="contact-box">
+            <p><strong>Telefono:</strong> +39 000 000 0000</p>
+            <p><strong>Email:</strong> info@serviciosprofesiona.info</p>
+            <p><strong>Orari:</strong> Lun–Sab: 08:00 – 19:00</p>
+            <p><strong>Zona operativa:</strong> Verona e provincia</p>
+        </div>
+
+        <h2>Scrivici un Messaggio</h2>
+
+        <form>
+            <label>Nome</label>
+            <input type="text" placeholder="Il tuo nome">
+
+            <label>Email</label>
+            <input type="email" placeholder="La tua email">
+
+            <label>Messaggio</label>
+            <textarea rows="5" placeholder="Scrivi qui il tuo messaggio"></textarea>
+
+            <button type="submit">Invia Messaggio</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Servicios Profesiona – Tutti i diritti riservati
+    </footer>
+
+</body>
+</html>

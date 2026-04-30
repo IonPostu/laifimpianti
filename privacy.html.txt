@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Profesiona – Privacy Policy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0a3d62;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            background-color: #0a3d62;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        /* PRIVACY CONTENT */
+        .privacy {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .privacy h2 {
+            font-size: 28px;
+            color: #0a3d62;
+            margin-top: 30px;
+        }
+
+        .privacy p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo"><strong>Servicios Profesiona</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="servizi.html">Servizi</a>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Privacy Policy</h1>
+        <p>Tutela dei dati personali e trasparenza.</p>
+    </section>
+
+    <!-- PRIVACY CONTENT -->
+    <section class="privacy">
+
+        <h2>1. Introduzione</h2>
+        <p>
+            La presente Privacy Policy descrive come vengono raccolti, utilizzati e protetti i dati personali
+            degli utenti che visitano il sito <strong>serviciosprofesiona.info</strong>.
+        </p>
+
+        <h2>2. Dati Raccolti</h2>
+        <p>
+            Possiamo raccogliere i seguenti dati:
+        </p>
+        <p>
+            • Nome e cognome<br>
+            • Indirizzo email<br>
+            • Numero di telefono<br>
+            • Messaggi inviati tramite il modulo di contatto<br>
+            • Dati tecnici (IP, tipo di dispositivo, browser)
+        </p>
+
+        <h2>3. Finalità del Trattamento</h2>
+        <p>I dati vengono utilizzati per:</p>
+        <p>
+            • Rispondere a richieste e preventivi<br>
+            • Fornire assistenza ai clienti<br>
+            • Migliorare il sito e i servizi offerti
+        </p>
+
+        <h2>4. Conservazione dei Dati</h2>
+        <p>
+            I dati vengono conservati solo per il tempo necessario a fornire i servizi richiesti.
+        </p>
+
+        <h2>5. Condivisione dei Dati</h2>
+        <p>
+            I dati non vengono venduti o ceduti a terzi.  
+            Possono essere condivisi solo con fornitori tecnici (hosting, email) strettamente necessari.
+        </p>
+
+        <h2>6. Diritti dell’Utente</h2>
+        <p>
+            L’utente può richiedere in qualsiasi momento:
+        </p>
+        <p>
+            • Accesso ai propri dati<br>
+            • Modifica o cancellazione<br>
+            • Limitazione del trattamento
+        </p>
+
+        <h2>7. Contatti per la Privacy</h2>
+        <p>
+            Per qualsiasi richiesta relativa alla privacy, puoi contattarci a:<br>
+            <strong>info@serviciosprofesiona.info</strong>
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Servicios Profesiona – Tutti i diritti riservati
+    </footer>
+
+</body>
+</html>

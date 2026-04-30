@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Profesiona – Chi Siamo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0a3d62;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            background-color: #0a3d62;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        /* CHI SIAMO */
+        .about {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            color: #0a3d62;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .values {
+            background-color: #eef2f5;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .values h2 {
+            color: #0a3d62;
+            margin-bottom: 30px;
+        }
+
+        .value-box {
+            display: inline-block;
+            width: 260px;
+            padding: 20px;
+            margin: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .value-box h3 {
+            color: #0a3d62;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo"><strong>Servicios Profesiona</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="servizi.html">Servizi</a>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Chi Siamo</h1>
+        <p>Professionalità, esperienza e dedizione al servizio del cliente.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>La Nostra Storia</h2>
+        <p>
+            Servicios Profesiona nasce con l’obiettivo di offrire servizi affidabili e di alta qualità
+            per privati e aziende. Nel corso degli anni abbiamo costruito una rete di professionisti
+            qualificati, capaci di intervenire rapidamente e con competenza in ogni situazione.
+        </p>
+
+        <p>
+            La nostra missione è garantire un servizio trasparente, efficiente e orientato alla soddisfazione
+            del cliente. Ogni intervento viene gestito con attenzione al dettaglio e rispetto per gli ambienti
+            in cui operiamo.
+        </p>
+
+        <p>
+            Crediamo nella serietà, nella puntualità e nella qualità del lavoro. Per questo continuiamo a
+            migliorare e ad ampliare i nostri servizi, offrendo soluzioni su misura per ogni esigenza.
+        </p>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values">
+        <h2>I Nostri Valori</h2>
+
+        <div class="value-box">
+            <h3>Affidabilità</h3>
+            <p>Interventi puntuali e professionali, sempre nel rispetto degli accordi.</p>
+        </div>
+
+        <div class="value-box">
+            <h3>Qualità</h3>
+            <p>Utilizziamo solo materiali e strumenti di alto livello.</p>
+        </div>
+
+        <div class="value-box">
+            <h3>Trasparenza</h3>
+            <p>Preventivi chiari e nessuna sorpresa nei costi finali.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Servicios Profesiona – Tutti i diritti riservati
+    </footer>
+
+</body>
+</html>
