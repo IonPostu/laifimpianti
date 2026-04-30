@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIF IMPIANTI SRLS – Impianti elettrici Verona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="assets/logo.png" class="logo" alt="LAIF IMPIANTI SRLS">
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="privacy.html">Privacy</a>
+    </nav>
+</header>
+
+<section class="hero fade-in">
+    <div class="hero-text">
+        <h1>Impianti elettrici civili e industriali a Verona</h1>
+        <p>
+            LAIF IMPIANTI SRLS realizza impianti elettrici, quadri, automazioni e manutenzioni
+            per il settore civile e industriale, con professionalità e affidabilità.
+        </p>
+        <a href="contatti.html" class="btn">Richiedi un preventivo</a>
+    </div>
+
+    <img src="assets/hero.jpg" alt="Tecnico impianti elettrici" class="hero-img">
+</section>
+
+<section class="servizi fade-in">
+    <h2>I nostri servizi principali</h2>
+
+    <div class="servizi-container">
+        <div class="servizio">
+            <img src="assets/servizio1.jpg" alt="Impianti civili e industriali" style="width:100%; border-radius:8px; margin-bottom:10px;">
+            <h3>Impianti civili e industriali</h3>
+            <p>Progettazione e realizzazione di impianti elettrici sicuri, efficienti e conformi alle normative vigenti.</p>
+        </div>
+
+        <div class="servizio">
+            <img src="assets/servizio2.jpg" alt="Impianti di automazione" style="width:100%; border-radius:8px; margin-bottom:10px;">
+            <h3>Impianti di automazione</h3>
+            <p>Automazione per cancelli, serrande, porte industriali e linee produttive.</p>
+        </div>
+
+        <div class="servizio">
+            <img src="assets/servizio3.jpg" alt="Quadri elettrici" style="width:100%; border-radius:8px; margin-bottom:10px;">
+            <h3>Quadri elettrici</h3>
+            <p>Progettazione e assemblaggio di quadri elettrici per uso civile e industriale.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-col">
+        <h3>LAIF IMPIANTI SRLS</h3>
+        <p>Via del Fante, 15<br>37122 Verona (VR)</p>
+        <p>C.F. 04990530233<br>P.IVA 04990530233<br>REA VR – 461819<br>CODICE UNIVOCO M5UXCR1</p>
+    </div>
+
+    <div class="footer-col">
+        <h3>CONTATTI</h3>
+        <p><strong>Amministrazione:</strong><br>
+        TEL: +39 3295813851<br>
+        Mail: commerciale.laifimpiantisrls@yahoo.com</p>
+
+        <p><strong>Segreteria:</strong><br>
+        Tel: +39 3293796313<br>
+        Mail: amministrazione.laifimpianti@gmail.com</p>
+    </div>
+</footer>
+
+</body>
+</html>
