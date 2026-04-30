@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIF IMPIANTI SRLS - Home</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: #333; background: #fff; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- HEADER --- */
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 40px; border-bottom: 1px solid #eee;
+        }
+        .logo { width: 120px; height: auto; }
+        nav ul { display: flex; gap: 40px; }
+        nav a {
+            text-transform: uppercase; font-size: 0.9rem;
+            color: #555; font-weight: 600;
+        }
+        nav a.active { color: #1a1a2e; }
+
+        /* --- HERO --- */
+        .hero {
+            display: flex; flex-wrap: wrap; min-height: 500px;
+            margin-bottom: 60px;
+        }
+        .hero-img {
+            flex: 1; min-width: 300px;
+            background-image: url('operaio-cablaggio.jpg');
+            background-size: cover; background-position: center;
+        }
+        .hero-text {
+            flex: 1; min-width: 300px; padding: 60px 40px;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        .hero-text h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.8rem; font-weight: 900;
+            text-transform: uppercase; letter-spacing: 1px;
+            color: #1a1a2e; margin-bottom: 15px;
+        }
+        .hero-text .sub {
+            border-top: 3px solid #fb8500; padding-top: 12px;
+            font-size: 1.1rem; color: #555; margin-bottom: 20px;
+        }
+        .hero-text p { color: #666; line-height: 1.6; }
+
+        /* --- SERVIZI --- */
+        .servizi { padding: 40px 0 80px; }
+        .servizi h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem; margin-bottom: 10px;
+        }
+        .servizi .sottotitolo { color: #666; margin-bottom: 40px; }
+
+        .cards-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #f5f6f8; border-radius: 15px; overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .card img {
+            width: 100%; height: 200px; object-fit: cover;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card-body h3 { font-size: 1.2rem; margin-bottom: 10px; color: #1a1a2e; }
+        .card-body p { font-size: 0.9rem; color: #555; margin-bottom: 20px; line-height: 1.6; }
+        .btn-piu {
+            display: inline-block; border: 2px solid #fb8500;
+            color: #fb8500; padding: 8px 25px; border-radius: 50px;
+            font-size: 0.8rem; font-weight: 600; text-align: center;
+            margin-top: auto; align-self: flex-start;
+        }
+
+        /* --- CONTATTI --- */
+        .contatti { padding: 20px 0 60px; }
+        .contatti h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem; margin-bottom: 10px;
+        }
+        .contatti-info { margin-bottom: 30px; font-weight: 600; }
+
+        .form-box {
+            background: #f5f6f8; padding: 40px; border-radius: 15px;
+        }
+        .form-row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+        .form-group { flex: 1; min-width: 250px; display: flex; flex-direction: column; }
+        .form-group label { font-size: 0.9rem; color: #555; margin-bottom: 8px; }
+        .form-group input, .form-group textarea {
+            padding: 12px; border: 1px solid #ddd; border-radius: 4px;
+            width: 100%; background: white;
+        }
+        .form-group textarea { height: 100px; resize: vertical; }
+        .btn-invia {
+            width: 100%; padding: 15px; background: #fb8500;
+            border: none; border-radius: 30px; color: white;
+            font-weight: bold; font-size: 1rem; cursor: pointer;
+        }
+
+        /* --- FOOTER --- */
+        footer { border-top: 1px solid #eee; padding: 40px 0 20px; font-size: 0.9rem; }
+        .footer-grid {
+            display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-col p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col strong { font-weight: 700; }
+        .copyright {
+            text-align: center; color: #888;
+            font-size: 0.75rem; border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo-laif.png" alt="LAIF IMPIANTI Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-img"></div>
+            <div class="hero-text">
+                <h1>LAIF IMPIANTI SRLS</h1>
+                <div class="sub">Esperienza • Affidabilità • Qualità</div>
+                <p>Specialisti in impianti elettrici industriali e civili, cablaggi e quadri elettrici. Operiamo a Verona e dintorni per garantire la massima sicurezza ed efficienza.</p>
+            </div>
+        </section>
+
+        <!-- SERVIZI -->
+        <section class="servizi container">
+            <h2>I Nostri Servizi</h2>
+            <p class="sottotitolo">Soluzioni elettriche professionali con i più alti standard di sicurezza e affidabilità per la tua casa o azienda.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="impianto-elettrico.jpg" alt="Impianti civili e industriali">
+                    <div class="card-body">
+                        <h3>Impianti civili e industriali</h3>
+                        <p>Progettiamo, ampliamo e mettiamo a norma impianti elettrici per case e aziende, garantendo sicurezza e conformità alle leggi.</p>
+                        <a href="servizi.html" class="btn-piu">Scopri di più</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="robot-fabbrica.jpg" alt="Impianti di automazione">
+                    <div class="card-body">
+                        <h3>Impianti di automazione</h3>
+                        <p>Gestiamo ogni fase: progettazione, cablaggio e manutenzione per garantire sistemi di automazione sicuri e produttivi.</p>
+                        <a href="servizi.html" class="btn-piu">Scopri di più</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cablaggio-quadro.jpg" alt="Quadri elettrici">
+                    <div class="card-body">
+                        <h3>Quadri elettrici</h3>
+                        <p>Assemblaggio, cablaggio, modifica e manutenzione di quadri elettrici per impianti civili e industriali, con particolare attenzione a sicurezza e continuità di servizio.</p>
+                        <a href="servizi.html" class="btn-piu">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATTI -->
+        <section class="contatti container">
+            <h2>Contattaci</h2>
+            <div class="contatti-info">
+                <p>Email: commerciale.laifimpiantisrls@yahoo.com</p>
+                <p>Sede: Verona, Italia</p>
+            </div>
+
+            <div class="form-box">
+                <form action="https://formspree.io/f/IL-TUO-ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nome *</label>
+                            <input type="text" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom:20px">
+                        <label>Oggetto *</label>
+                        <input type="text" name="oggetto" required>
+                    </div>
+                    <div class="form-group" style="margin-bottom:20px">
+                        <label>Messaggio *</label>
+                        <textarea name="messaggio" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-invia">Invia Messaggio</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="logo-laif.png" alt="Logo" style="width:100px; margin-bottom:10px;">
+                    <h4>LAIF IMPIANTI SRLS</h4>
+                    <p>
+                        Via del Fante, 15<br>
+                        37122 Verona (VR)<br>
+                        C.F. 048950202323
+                    </p>
+                </div>
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+                    <div>
+                        <strong>Amministrazione:</strong><br>
+                        TEL. +39 3295813851<br>
+                        commerciale.laifimpiantisrls@yahoo.com
+                    </div>
+                    <div>
+                        <strong>Segreteria:</strong><br>
+                        Tel. +39 3293796313<br>
+                        amministrazione.laifimpianti@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2026 LAIF IMPIANTI. Tutti i diritti sono riservati.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
