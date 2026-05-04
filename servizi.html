@@ -107,7 +107,7 @@
             border-bottom: none;
         }
 
-        /* --- FOOTER IDENTICO A INDEX --- */
+        /* --- FOOTER 2 COLONNE CENTRATO --- */
         footer {
             border-top: 1px solid #eee;
             padding: 40px 0 20px;
@@ -128,7 +128,7 @@
             text-transform: uppercase;
         }
 
-        .footer-content {
+        .footer-columns {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -136,10 +136,10 @@
             margin-bottom: 20px;
         }
 
+        /* Colonna SINISTRA: LAIF IMPIANTI */
         .footer-col-sede {
             flex: 0 0 300px;
             text-align: left;
-            margin-top: -70px;
         }
         .footer-col-sede .footer-logo {
             width: 80px;
@@ -159,22 +159,21 @@
             color: #555;
         }
 
-        .footer-col-dx {
+        /* Colonna DESTRA: CONTATTI */
+        .footer-col-contatti {
             flex: 0 0 400px;
             text-align: left;
             display: flex;
             flex-direction: column;
             gap: 25px;
-            padding-top: 0;
-            margin-top: -15px;
         }
-        .footer-col-dx .block h4 {
+        .footer-col-contatti .block h4 {
             font-size: 1rem;
             font-weight: 700;
             margin-bottom: 5px;
             text-transform: uppercase;
         }
-        .footer-col-dx .block p {
+        .footer-col-contatti .block p {
             font-size: 0.85rem;
             line-height: 1.6;
             color: #555;
@@ -202,9 +201,10 @@
             .servizio-header { flex-direction: column; text-align: center; padding: 25px 20px; }
             .servizio-icon { margin-bottom: 10px; }
             .page-servizi h1 { font-size: 2rem; margin-bottom: 30px; }
-            .footer-content { flex-direction: column; align-items: center; gap: 40px; }
-            .footer-col-sede { margin-top: 0; flex: unset; width: 100%; text-align: center; }
-            .footer-col-dx { margin-top: 0; flex: unset; width: 100%; text-align: center; }
+            .footer-columns { flex-direction: column; align-items: center; gap: 40px; }
+            .footer-col-sede { flex: unset; width: 100%; text-align: center; }
+            .footer-col-sede .footer-logo { margin: 0 auto 5px; }
+            .footer-col-contatti { flex: unset; width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -226,7 +226,7 @@
         <section class="container page-servizi">
             <h1>Servizi elettrici completi per il settore civile e industriale</h1>
 
-            <!-- Servizio 1: Impianti civili e industriali -->
+            <!-- Servizio 1 -->
             <div class="servizio-card">
                 <div class="servizio-header">
                     <div class="servizio-icon">
@@ -253,7 +253,7 @@
                 </table>
             </div>
 
-            <!-- Servizio 2: Impianti di automazione -->
+            <!-- Servizio 2 -->
             <div class="servizio-card">
                 <div class="servizio-header">
                     <div class="servizio-icon">
@@ -280,7 +280,7 @@
                 </table>
             </div>
 
-            <!-- Servizio 3: Quadri elettrici -->
+            <!-- Servizio 3 -->
             <div class="servizio-card">
                 <div class="servizio-header">
                     <div class="servizio-icon">
@@ -307,7 +307,7 @@
                 </table>
             </div>
 
-            <!-- Servizio 4: Manutenzione e adeguamento normativo -->
+            <!-- Servizio 4 -->
             <div class="servizio-card">
                 <div class="servizio-header">
                     <div class="servizio-icon">
@@ -343,7 +343,8 @@
                 <h3>CONTATTI</h3>
             </div>
 
-            <div class="footer-content">
+            <div class="footer-columns">
+                <!-- Colonna SINISTRA -->
                 <div class="footer-col-sede">
                     <img src="logo-laif.png" alt="Logo LAIF IMPIANTI" class="footer-logo">
                     <h4>LAIF IMPIANTI SRLS</h4>
@@ -357,7 +358,8 @@
                     </p>
                 </div>
 
-                <div class="footer-col-dx">
+                <!-- Colonna DESTRA -->
+                <div class="footer-col-contatti">
                     <div class="block">
                         <h4>AMMINISTRAZIONE:</h4>
                         <p>
