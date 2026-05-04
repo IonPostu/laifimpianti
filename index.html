@@ -75,7 +75,7 @@
             margin-top: auto; align-self: flex-start;
         }
 
-        /* --- FOOTER CORRETTO (allineato) --- */
+        /* --- FOOTER CORRETTO (colonna destra alzata -15px) --- */
         footer {
             border-top: 1px solid #eee;
             padding: 40px 0 20px;
@@ -104,7 +104,7 @@
             margin-bottom: 20px;
         }
 
-        /* Colonna SINISTRA (LAIF IMPIANTI nella posizione corretta) */
+        /* Colonna SINISTRA */
         .footer-col-sede {
             flex: 0 0 300px;
             text-align: left;
@@ -128,15 +128,15 @@
             color: #555;
         }
 
-        /* Colonna DESTRA (AMMINISTRAZIONE allineata) */
+        /* Colonna DESTRA - alzata con -15px */
         .footer-col-dx {
             flex: 0 0 400px;
             text-align: left;
             display: flex;
             flex-direction: column;
             gap: 25px;
-            /* Regolazione precisa: abbassa leggermente AMMINISTRAZIONE */
-            padding-top: 13px;  /* Prova 13px, se non basta aumenta a 15px o 18px */
+            padding-top: 0;
+            margin-top: -15px;  /* Alzata di 15 pixel */
         }
         .footer-col-dx .block h4 {
             font-size: 1rem;
@@ -175,7 +175,7 @@
             .hero-text h1 { font-size: 2rem; }
             .footer-content { flex-direction: column; align-items: center; gap: 40px; }
             .footer-col-sede { margin-top: 0; flex: unset; width: 100%; text-align: center; }
-            .footer-col-dx { padding-top: 0; flex: unset; width: 100%; text-align: center; }
+            .footer-col-dx { margin-top: 0; flex: unset; width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -257,7 +257,7 @@
                     </p>
                 </div>
 
-                <!-- Colonna DESTRA -->
+                <!-- Colonna DESTRA - alzata -->
                 <div class="footer-col-dx">
                     <div class="block">
                         <h4>AMMINISTRAZIONE:</h4>
