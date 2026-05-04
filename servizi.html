@@ -12,7 +12,6 @@
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* --- HEADER --- */
         header {
             display: flex; justify-content: space-between; align-items: center;
             padding: 20px 40px; border-bottom: 1px solid #eee;
@@ -26,66 +25,186 @@
         }
         nav a.active { border-bottom: 2px solid #1a1a2e; padding-bottom: 5px; }
 
-        /* --- SERVIZI PAGE --- */
         .page-servizi { padding: 60px 0 80px; }
         .page-servizi h1 {
             font-family: 'Georgia', serif; font-size: 2.8rem;
             color: #1a1a2e; text-align: center; margin-bottom: 60px;
             line-height: 1.2; max-width: 900px; margin-left: auto; margin-right: auto;
         }
+
         .servizio-card {
-            background-color: #f5f6f8; border-radius: 12px; padding: 30px 40px;
-            margin-bottom: 25px; display: flex; align-items: center; gap: 30px;
+            background-color: #f5f6f8;
+            border-radius: 12px;
+            padding: 30px 40px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             transition: transform 0.2s;
         }
-        .servizio-card:hover { transform: translateY(-3px); }
-        .servizio-icon {
-            flex-shrink: 0; width: 80px; height: 80px; background: white;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .servizio-icon img { width: 100%; height: 100%; object-fit: contain; }
-        .servizio-content { flex-grow: 1; }
-        .servizio-content h3 { font-size: 1.3rem; color: #1a1a2e; margin-bottom: 8px; font-weight: 700; }
-        .servizio-content p { color: #555; line-height: 1.6; font-size: 0.95rem; }
 
-        /* --- FOOTER CORRETTO --- */
+        .servizio-card:hover { transform: translateY(-3px); }
+
+        .servizio-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .servizio-icon {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .servizio-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .servizio-content { flex-grow: 1; }
+        .servizio-content h3 {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .servizio-content p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* --- STILE TABELLE (SENZA #) --- */
+        .tabella-lavori {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .tabella-lavori th {
+            background-color: #e9ecef;
+            color: #1a1a2e;
+            padding: 10px 15px;
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid #ddd;
+        }
+        .tabella-lavori td {
+            padding: 8px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+        }
+        .tabella-lavori tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* --- FOOTER IDENTICO A INDEX --- */
         footer {
-            border-top: 1px solid #eee; padding: 40px 0 20px; font-size: 0.9rem; margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding: 40px 0 20px;
+            font-size: 0.9rem;
+            margin-top: 20px;
             background: white;
         }
+
+        .footer-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
         .footer-title h3 {
-            font-family: 'Georgia', serif; font-size: 1.5rem; font-weight: 700;
-            color: #1a1a2e; margin-bottom: 25px; text-align: left;
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            text-transform: uppercase;
         }
+
         .footer-content {
-            display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 60px; margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 20px;
         }
-        .footer-col-sede { flex: 0 0 280px; }
-        .footer-col-sede .footer-logo { width: 80px; height: auto; margin-bottom: 15px; }
-        .footer-col-sede h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
-        .footer-col-sede p { font-size: 0.85rem; line-height: 1.6; color: #555; }
 
-        .footer-col-admin { flex: 1; min-width: 200px; }
-        .footer-col-admin h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-        .footer-col-admin p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col-sede {
+            flex: 0 0 300px;
+            text-align: left;
+            margin-top: -70px;
+        }
+        .footer-col-sede .footer-logo {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .footer-col-sede h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .footer-col-sede p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #555;
+        }
 
-        .footer-col-seg { flex: 1; min-width: 200px; }
-        .footer-col-seg h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-        .footer-col-seg p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col-dx {
+            flex: 0 0 400px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-top: 0;
+            margin-top: -15px;
+        }
+        .footer-col-dx .block h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .footer-col-dx .block p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #555;
+        }
 
-        .footer-extra p { font-size: 0.85rem; color: #555; margin-bottom: 20px; }
-        .copyright { text-align: center; color: #888; font-size: 0.75rem; border-top: 1px solid #eee; padding-top: 20px; }
+        .footer-italia {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
 
-        /* --- RESPONSIVE --- */
+        .copyright {
+            text-align: center;
+            color: #888;
+            font-size: 0.75rem;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
         @media (max-width: 768px) {
             header { flex-direction: column; gap: 15px; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
-            .servizio-card { flex-direction: column; text-align: center; padding: 25px 20px; }
+            .servizio-header { flex-direction: column; text-align: center; padding: 25px 20px; }
             .servizio-icon { margin-bottom: 10px; }
             .page-servizi h1 { font-size: 2rem; margin-bottom: 30px; }
-            .footer-content { flex-direction: column; gap: 30px; }
-            .footer-col-sede { flex: unset; width: 100%; }
+            .footer-content { flex-direction: column; align-items: center; gap: 40px; }
+            .footer-col-sede { margin-top: 0; flex: unset; width: 100%; text-align: center; }
+            .footer-col-dx { margin-top: 0; flex: unset; width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -107,44 +226,112 @@
         <section class="container page-servizi">
             <h1>Servizi elettrici completi per il settore civile e industriale</h1>
 
+            <!-- Servizio 1: Impianti civili e industriali -->
             <div class="servizio-card">
-                <div class="servizio-icon">
-                    <img src="icon-civile.jpg" alt="Impianti civili e industriali">
+                <div class="servizio-header">
+                    <div class="servizio-icon">
+                        <img src="icon-civile.jpg" alt="Impianti civili e industriali">
+                    </div>
+                    <div class="servizio-content">
+                        <h3>Impianti civili e industriali</h3>
+                        <p>Progettiamo e realizziamo impianti elettrici civili e industriali, garantendo sicurezza, efficienza energetica e conformità alle normative vigenti. Seguiamo ogni fase, dalla progettazione all'installazione.</p>
+                    </div>
                 </div>
-                <div class="servizio-content">
-                    <h3>Impianti civili e industriali</h3>
-                    <p>Progettiamo e realizziamo impianti elettrici civili e industriali, garantendo sicurezza, efficienza energetica e conformità alle normative vigenti. Seguiamo ogni fase, dalla progettazione all'installazione.</p>
-                </div>
+                <table class="tabella-lavori">
+                    <thead>
+                        <tr><th>Fase di lavoro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Progettazione e preparazione</td></tr>
+                        <tr><td>Posa e installazione</td></tr>
+                        <tr><td>Cablaggio e collegamenti</td></tr>
+                        <tr><td>Messa in servizio e collaudo</td></tr>
+                        <tr><td>Manutenzione e ricerca guasti</td></tr>
+                        <tr><td>Avviamento e formazione</td></tr>
+                        <tr><td>Servizi aggiuntivi</td></tr>
+                    </tbody>
+                </table>
             </div>
 
+            <!-- Servizio 2: Impianti di automazione -->
             <div class="servizio-card">
-                <div class="servizio-icon">
-                    <img src="icon-automazione.jpg" alt="Impianti di automazione">
+                <div class="servizio-header">
+                    <div class="servizio-icon">
+                        <img src="icon-automazione.jpg" alt="Impianti di automazione">
+                    </div>
+                    <div class="servizio-content">
+                        <h3>Impianti di automazione</h3>
+                        <p>Realizziamo sistemi di automazione per cancelli, serrande, porte industriali e linee produttive. Soluzioni personalizzate per migliorare comfort, sicurezza e produttività.</p>
+                    </div>
                 </div>
-                <div class="servizio-content">
-                    <h3>Impianti di automazione</h3>
-                    <p>Realizziamo sistemi di automazione per cancelli, serrande, porte industriali e linee produttive. Soluzioni personalizzate per migliorare comfort, sicurezza e produttività.</p>
-                </div>
+                <table class="tabella-lavori">
+                    <thead>
+                        <tr><th>Fase di lavoro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Progettazione e analisi delle esigenze</td></tr>
+                        <tr><td>Installazione di sensori e attuatori</td></tr>
+                        <tr><td>Cablaggio e collegamento dei dispositivi</td></tr>
+                        <tr><td>Collegamento PLC</td></tr>
+                        <tr><td>Collaudo e messa in servizio</td></tr>
+                        <tr><td>Manutenzione e diagnostica</td></tr>
+                        <tr><td>Aggiornamento e ottimizzazione</td></tr>
+                    </tbody>
+                </table>
             </div>
 
+            <!-- Servizio 3: Quadri elettrici -->
             <div class="servizio-card">
-                <div class="servizio-icon">
-                    <img src="icon-quadri.jpg" alt="Quadri elettrici">
+                <div class="servizio-header">
+                    <div class="servizio-icon">
+                        <img src="icon-quadri.jpg" alt="Quadri elettrici">
+                    </div>
+                    <div class="servizio-content">
+                        <h3>Quadri elettrici</h3>
+                        <p>Progettiamo e assembliamo quadri elettrici per applicazioni civili e industriali. Offriamo soluzioni affidabili per la gestione e protezione degli impianti.</p>
+                    </div>
                 </div>
-                <div class="servizio-content">
-                    <h3>Quadri elettrici</h3>
-                    <p>Progettiamo e assembliamo quadri elettrici per applicazioni civili e industriali. Offriamo soluzioni affidabili per la gestione e protezione degli impianti.</p>
-                </div>
+                <table class="tabella-lavori">
+                    <thead>
+                        <tr><th>Fase di lavoro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Progettazione e dimensionamento</td></tr>
+                        <tr><td>Assemblaggio e cablaggio interno</td></tr>
+                        <tr><td>Montaggio componenti e protezioni</td></tr>
+                        <tr><td>Collegamento ingressi e uscite</td></tr>
+                        <tr><td>Collaudo e verifica funzionale</td></tr>
+                        <tr><td>Manutenzione e aggiornamento</td></tr>
+                        <tr><td>Documentazione e certificazione</td></tr>
+                    </tbody>
+                </table>
             </div>
 
+            <!-- Servizio 4: Manutenzione e adeguamento normativo -->
             <div class="servizio-card">
-                <div class="servizio-icon">
-                    <img src="icon-manutenzione.jpg" alt="Manutenzione e adeguamento normativo">
+                <div class="servizio-header">
+                    <div class="servizio-icon">
+                        <img src="icon-manutenzione.jpg" alt="Manutenzione e adeguamento normativo">
+                    </div>
+                    <div class="servizio-content">
+                        <h3>Manutenzione e adeguamento normativo</h3>
+                        <p>Eseguiamo manutenzioni ordinarie e straordinarie, ricerca guasti e adeguamenti a norma. Rilasciamo tutta la documentazione richiesta secondo le normative vigenti.</p>
+                    </div>
                 </div>
-                <div class="servizio-content">
-                    <h3>Manutenzione e adeguamento normativo</h3>
-                    <p>Eseguiamo manutenzioni ordinarie e straordinarie, ricerca guasti e adeguamenti a norma. Rilasciamo tutta la documentazione richiesta secondo le normative vigenti.</p>
-                </div>
+                <table class="tabella-lavori">
+                    <thead>
+                        <tr><th>Fase di lavoro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ispezione e verifica dello stato dell'impianto</td></tr>
+                        <tr><td>Manutenzione ordinaria e straordinaria</td></tr>
+                        <tr><td>Ricerca guasti e diagnostica</td></tr>
+                        <tr><td>Sostituzione e aggiornamento componenti</td></tr>
+                        <tr><td>Verifica di conformità normativa</td></tr>
+                        <tr><td>Adeguamento impianti a norma</td></tr>
+                        <tr><td>Redazione e rilascio certificazioni</td></tr>
+                    </tbody>
+                </table>
             </div>
 
         </section>
@@ -163,31 +350,32 @@
                     <p>
                         Via del Fante, 15<br>
                         37122 Verona (VR)<br>
-                        C.F. 048950202323<br>
-                        P.Iva 049950202323<br>
+                        C.F. 04995020233<br>
+                        P.Iva 04995020233<br>
                         REA VR - 461819<br>
                         CODICE UNIVOCO: M5UXCR1
                     </p>
                 </div>
 
-                <div class="footer-col-admin">
-                    <h4>Amministrazione:</h4>
-                    <p>
-                        TEL. +39 3295813851<br>
-                        Mail: commerciale.laifimpiantisrls@yahoo.com
-                    </p>
-                </div>
-
-                <div class="footer-col-seg">
-                    <h4>Segreteria :</h4>
-                    <p>
-                        Tel. +39 3293796313<br>
-                        Mail: amministrazione.laifimpianti@gmail.com
-                    </p>
+                <div class="footer-col-dx">
+                    <div class="block">
+                        <h4>AMMINISTRAZIONE:</h4>
+                        <p>
+                            TEL. +39 3295813851<br>
+                            Mail: commerciale.laifimpiantisrls@yahoo.com
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h4>SEGRETERIA:</h4>
+                        <p>
+                            Tel. +39 3293796313<br>
+                            Mail: amministrazione.laifimpianti@gmail.com
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-extra">
+            <div class="footer-italia">
                 <p>Italia</p>
             </div>
 
