@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,7 +13,6 @@
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* --- HEADER --- */
         header {
             display: flex; justify-content: space-between; align-items: center;
             padding: 20px 40px; border-bottom: 1px solid #eee;
@@ -26,7 +26,6 @@
         }
         nav a.active { border-bottom: 2px solid #1a1a2e; padding-bottom: 5px; }
 
-        /* --- CHI SIAMO SECTION --- */
         .chi-siamo-section {
             display: flex; flex-wrap: wrap; min-height: 600px; margin: 40px 0; align-items: center;
         }
@@ -52,43 +51,104 @@
         }
         .chi-siamo-text p { color: #555; line-height: 1.8; margin-bottom: 20px; font-size: 1rem; }
 
-        /* --- FOOTER CORRETTO --- */
+        /* --- FOOTER IDENTICO A INDEX --- */
         footer {
-            border-top: 1px solid #eee; padding: 40px 0 20px; font-size: 0.9rem; margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding: 40px 0 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
             background: white;
         }
+
+        .footer-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
         .footer-title h3 {
-            font-family: 'Georgia', serif; font-size: 1.5rem; font-weight: 700;
-            color: #1a1a2e; margin-bottom: 25px; text-align: left;
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            text-transform: uppercase;
         }
+
         .footer-content {
-            display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 60px; margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 20px;
         }
-        .footer-col-sede { flex: 0 0 280px; }
-        .footer-col-sede .footer-logo { width: 80px; height: auto; margin-bottom: 15px; }
-        .footer-col-sede h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
-        .footer-col-sede p { font-size: 0.85rem; line-height: 1.6; color: #555; }
 
-        .footer-col-admin { flex: 1; min-width: 200px; }
-        .footer-col-admin h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-        .footer-col-admin p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col-sede {
+            flex: 0 0 300px;
+            text-align: left;
+            margin-top: -70px;
+        }
+        .footer-col-sede .footer-logo {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .footer-col-sede h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .footer-col-sede p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #555;
+        }
 
-        .footer-col-seg { flex: 1; min-width: 200px; }
-        .footer-col-seg h4 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-        .footer-col-seg p { font-size: 0.85rem; line-height: 1.6; color: #555; }
+        .footer-col-dx {
+            flex: 0 0 400px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-top: 0;
+            margin-top: -15px;
+        }
+        .footer-col-dx .block h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .footer-col-dx .block p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #555;
+        }
 
-        .footer-extra p { font-size: 0.85rem; color: #555; margin-bottom: 20px; }
-        .copyright { text-align: center; color: #888; font-size: 0.75rem; border-top: 1px solid #eee; padding-top: 20px; }
+        .footer-italia {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
 
-        /* --- RESPONSIVE --- */
+        .copyright {
+            text-align: center;
+            color: #888;
+            font-size: 0.75rem;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
         @media (max-width: 768px) {
             header { flex-direction: column; gap: 15px; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
             .chi-siamo-section { flex-direction: column; }
             .chi-siamo-img { width: 100%; min-height: 300px; border-radius: 40px 40px 0 0; margin: 0; }
             .chi-siamo-text { width: 100%; margin: 0; border-radius: 0 0 40px 40px; padding: 30px 20px; }
-            .footer-content { flex-direction: column; gap: 30px; }
-            .footer-col-sede { flex: unset; width: 100%; }
+            .footer-content { flex-direction: column; align-items: center; gap: 40px; }
+            .footer-col-sede { margin-top: 0; flex: unset; width: 100%; text-align: center; }
+            .footer-col-dx { margin-top: 0; flex: unset; width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -133,31 +193,32 @@
                     <p>
                         Via del Fante, 15<br>
                         37122 Verona (VR)<br>
-                        C.F. 048950202323<br>
-                        P.Iva 049950202323<br>
+                        C.F. 04995020233<br>
+                        P.Iva 04995020233<br>
                         REA VR - 461819<br>
                         CODICE UNIVOCO: M5UXCR1
                     </p>
                 </div>
 
-                <div class="footer-col-admin">
-                    <h4>Amministrazione:</h4>
-                    <p>
-                        TEL. +39 3295813851<br>
-                        Mail: commerciale.laifimpiantisrls@yahoo.com
-                    </p>
-                </div>
-
-                <div class="footer-col-seg">
-                    <h4>Segreteria :</h4>
-                    <p>
-                        Tel. +39 3293796313<br>
-                        Mail: amministrazione.laifimpianti@gmail.com
-                    </p>
+                <div class="footer-col-dx">
+                    <div class="block">
+                        <h4>AMMINISTRAZIONE:</h4>
+                        <p>
+                            TEL. +39 3295813851<br>
+                            Mail: commerciale.laifimpiantisrls@yahoo.com
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h4>SEGRETERIA:</h4>
+                        <p>
+                            Tel. +39 3293796313<br>
+                            Mail: amministrazione.laifimpianti@gmail.com
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-extra">
+            <div class="footer-italia">
                 <p>Italia</p>
             </div>
 
